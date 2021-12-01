@@ -4,13 +4,77 @@
 }
 
 body {
-
+    background-image: url(images/TopDesk.png);
 }
 
 .corpo {
+    background-color: rgb(246, 248, 244);
+    background-image: linear-gradient(rgba(147, 191, 238, 0.439), rgba(65, 63, 63, 0.357), rgba(139, 190, 218, 0.439));
+    position: relative;
+    overflow: hidden;
     border: 1px solid gray;
     box-shadow: 1px 2px 10px black;
-    width: 70%;
+    width: 65%;
     height: 800px;
     margin: auto;
+}
+
+.cabecalho {
+    margin-top: 5px;
+}
+
+.tkcenter {
+    /*border: 1px solid black;*/
+    width: auto;
+    height: 90px;
+    overflow: hidden;
+    position: sticky;
+    margin-top: 0;
+    background-color: white;
+}
+
+h2 {
+    margin-left: 5px;
+    padding: 7px;
+    font-size: 27px;
+}
+
+#informativo {
+    /*border: 1px solid black;*/
+    /*background-image: linear-gradient(white, rgba(0, 0, 0, 0.357), white);*/
+    background-color: rgb(246, 248, 244);
+    background-image: linear-gradient(white, rgba(0, 0, 0, 0.357), white);
+    position: relative;
+    display: inline-block;
+    height: auto;
+    margin: 2px 5px 5px 5px;
+    padding: 2px;
+    width: auto;
+}
+
+#informativo > p {
+    padding: 5px;
+    width: 75%;
+    font-size: 19px;
+    text-align: justify;
+    text-shadow: 1px 1px 3px rgb(206, 203, 203);
+}
+#informativo > h3 {
+    padding: 5px;
+    font-size: 27px;
+}
+
+#plantonista {
+    margin: 2px 2px 2px 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+.acessos {
+    border: 1px solid black;
+    margin: auto 5px auto auto;
+}
+.listasAcessos {
+    list-style: none;
+    padding: 10px;
 }
