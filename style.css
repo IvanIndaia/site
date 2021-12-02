@@ -5,13 +5,13 @@
 
 body {
     background-image: url(images/TopDesk.png);
+    background-size: contain;
 }
 
 .corpo {
     background-color: rgb(246, 248, 244);
     background-image: linear-gradient(rgba(147, 191, 238, 0.439), rgba(65, 63, 63, 0.357), rgba(139, 190, 218, 0.439));
     position: relative;
-    overflow: hidden;
     border: 1px solid gray;
     box-shadow: 1px 2px 10px black;
     width: 67%;
@@ -19,6 +19,7 @@ body {
     margin: auto;
     margin-bottom: 7px;
     border-radius: 1.5%;
+    overflow: hidden;
 }
 
 .cabecalho {
@@ -39,6 +40,7 @@ h2 {
     margin-left: 5px;
     padding: 3px;
     font-size: 25px;
+    margin: auto;
 }
 
 #informativo {
@@ -49,20 +51,21 @@ h2 {
     position: relative;
     display: inline-block;
     height: auto;
-    margin: 2px 5px 5px 5px;
+    margin: 2px 10px 2px 10px;
     padding: 2px;
-    width: auto;
+    width: 97%;
     border-radius: 1%;
+    overflow: auto;
 }
 
 #informativo > p {
     padding: 7px;
-    width: auto;
     font-size: 17px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: justify;
     text-shadow: 1px 1px 3px rgb(206, 203, 203);
     /*border: 1px solid black;*/
+    margin: auto;
 }
 h3 {
     padding: 3px;
@@ -84,6 +87,7 @@ h3 {
     margin: 0px 2px 2px 15px;
     text-align: center;
     padding: 2px;
+    overflow: auto;
 }
 img {
     border-radius: 0.5%;
@@ -112,4 +116,69 @@ img {
 }
 .ver {
     color: red;
+}
+
+/* =========================== FISRT =========================== */
+@media screen and (max-width: 1350px) {
+    .corpo {
+        /*background-color: blue;*/
+        width: 72%;
+    }
+    #informativo {
+        width: 97%;
+    }
+}
+
+/* =========================== SECOND =========================== */
+@media screen and (max-width: 1100px) {
+    .corpo {
+        /*background-color: green;*/
+        width: 77%;
+    }
+    #informativo {
+        width: 97%;
+    }
+}
+
+/* =========================== THIRD =========================== */
+@media screen and (max-width: 950px) {
+    .corpo {
+        /*background-color: rgb(253, 245, 4);*/
+        width: 82%;
+    }
+    #informativo {
+        width: 96%;
+    }
+}
+
+/* =========================== FOURTH =========================== */
+@media screen and (max-width: 750px) {
+    .corpo {
+        background-image: url("images/TopDesk.png") width="100px";
+        /*background-color: red;*/
+        position: relative;
+        overflow: aut;
+        border: 1px solid gray;
+        box-shadow: 1px 2px 10px black;
+        width: 95%;
+        height: auto;
+        margin: auto;
+        margin-bottom: 7px;
+        border-radius: 1.5%;
+    }  
+
+    #informativo {
+        margin: 2px auto 2px 10px;
+        width: 95%;
+    } 
+
+    .rodape {
+        text-align: center;
+        padding: 17px;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.631), rgb(214, 214, 214), rgba(255, 255, 255, 0.549));
+        border-radius: 7px;
+        width: 80.5%;
+        margin: auto;
+        box-shadow: 1px  2px 10px black;
+    }
 }
